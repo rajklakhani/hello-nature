@@ -1,0 +1,42 @@
+.header {
+    height: 100vh;
+    background-image: linear-gradient(to right bottom,
+            rgba($color-primary-light, 0.6),
+            rgba($color-primary-dark, 0.6)),
+        url(../img/hero3.jpg);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em),
+            (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+            (min-width: 125em) {
+                background-image: linear-gradient(to right bottom,
+                rgba($color-primary-light, 0.6),
+                rgba($color-primary-dark, 0.6)),
+                url(../img/hero.jpg);            
+    }
+
+
+    &__logo-box {
+        position: absolute;
+        top: 6rem;
+        left: 6rem;
+    }
+
+    &__logo {
+        height: 6rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+    }
+
+
+}
